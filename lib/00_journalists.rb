@@ -35,3 +35,12 @@ name[1]== name[1].upcase
 end
 }
 puts"#{ nb_maj} qui commmencent par une majuscule"
+
+#Sors-moi une répartition des handle par taille de ces derniers 
+#(nombre de handle avec 1 caractère, nombre de handle avec 2 caractères, nombre de handle avec 3 caractères, etc)
+i = 0
+ while i < 17 do
+   puts "adresses avec #{i} charactères #{username.count{|x| x.length == i}}"
+   i +=1
+ end
+   puts "adresses avec 33 charactères #{username.count{|x| x.length == 33}}"
